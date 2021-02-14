@@ -1,0 +1,211 @@
+.gallerycontiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ghead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 70vh;
+    padding-top: 100px;
+    background: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/haut-risque-yQGrZXeyAU8-unsplash.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ghead .glogo{
+    min-width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.ghead .glogo img{
+    min-height: 50vh;
+}
+
+.ghead .gtext{
+    min-width: 70%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ghead .gtext p{
+    font-size: 40px;
+    line-height:70px;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 100%;
+    background: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/alex-loup-2zDw14yCYqk-unsplash.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+}
+
+.slidebooks::-webkit-scrollbar {
+    display: none;
+  }
+.books .slidebooks {
+    display: flex;
+    width: 85%;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 30vh;
+    padding: 20px 20px;
+    overflow-x: scroll;
+    
+}
+
+.books .slidebooks .book{
+    min-width: calc(100% / 5);
+    max-width: calc(100% / 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+    padding: 0 20px;
+}
+
+
+hr {
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+.allbooks {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+   
+}
+
+.allbooks .book{
+    min-width: calc(100% / 5);
+    max-width: calc(100% / 5);
+    padding: 0 20px;
+}
+
+@media only screen and (max-width : 1000px){
+    .allbooks .book{
+        min-width: calc(100% / 4);
+        max-width: calc(100% / 4);
+        padding: 0 20px;
+    }
+    .books .slidebooks .book{
+        min-width: calc(100% / 4);
+        max-width: calc(100% / 4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .allbooks .book{
+        min-width: calc(100% / 3);
+        max-width: calc(100% / 3);
+        padding: 0 20px;
+    }
+    .books .slidebooks .book{
+        min-width: calc(100% / 3);
+        max-width: calc(100% / 3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width : 400px){
+    .allbooks .book{
+        min-width: calc(100% / 2);
+        max-width: calc(100% / 2);
+        padding: 0 20px;
+    }
+    .books .slidebooks .book{
+        min-width: calc(100% / 2);
+        max-width: calc(100% / 2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+/*pub*/
+
+.pubConatiner {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 30px;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/brandi-redd-aJTiW00qqtI-unsplash.jpg");
+    color: white;
+
+}
+.pubConatiner h1{
+    font-size: 80px;
+    color: white;
+
+}
+.pubConatiner h3{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+
+}
+.pub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px;
+
+}
+
+.pub .imgpub{
+    
+    display: flex;
+    justify-content: center;
+    max-height: 70vh;
+    overflow: hidden;
+
+}
+.pub .imgpub img{
+    object-fit: contain;
+    min-height: 70vh;
+    max-width: 70vh;
+    min-width: 70vh;
+}
+
+.pub .Pubtext{
+    padding: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    background-color: #B32137;
+    border-radius: 25px;
+    min-height: 70vh;
+
+}
